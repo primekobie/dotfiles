@@ -1,0 +1,11 @@
+font-family = "RobotoMono Nerd Font"
+font-size = 14
+theme = "Kanagawa Wave"
+cursor-style = "block"
+cursor-style-blink = true
+background-opacity = 1
+background-blur = true
+
+maximize = true
+window-padding-x = 5
+window-padding-y = 5

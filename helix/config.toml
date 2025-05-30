@@ -1,0 +1,40 @@
+theme = "bogster"
+
+[editor]
+line-number = "relative"
+end-of-line-diagnostics = "hint"
+true-color = true
+text-width = 100
+color-modes = true
+popup-border = "all"
+bufferline = "multiple"
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-inlay-hints = false
+display-signature-help-docs = true
+snippets = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator","version-control", "file-modification-indicator"]
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 1000
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""
+wrap-at-text-width = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]

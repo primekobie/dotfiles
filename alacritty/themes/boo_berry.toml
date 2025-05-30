@@ -1,0 +1,28 @@
+# Colors (boo_berry)
+
+# Default colors
+[colors.primary]
+background =  '#3A2A4D'
+foreground =  '#C7B8E0'
+
+# Normal colors
+[colors.normal]
+black   = '#2B1C3D'
+red     = '#D678B5'
+green   = '#7FC9AB'
+yellow  = '#E3C0A8'
+blue    = '#7C9CFF'
+magenta = '#C78DFC'
+cyan    = '#80CBC4'
+white   = '#C7B8E0'
+
+# Bright colors
+[colors.bright]
+black   = '#47345E'
+red     = '#D678B5'
+green   = '#96DDC0'
+yellow  = '#FFD6BC'
+blue    = '#96B4FF'
+magenta = '#D4A6FF'
+cyan    = '#98E5DE'
+white   = '#DED3F0'
