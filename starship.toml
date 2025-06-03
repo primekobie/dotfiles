@@ -4,12 +4,15 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
+format = '$all'
+
 [character]
 success_symbol = "[➟](bold green)"
 error_symbol = "[➟](bold red)"
 
-[buf]
-format = '(with [$symbol($version )]($style))'
+[line_break]
+disabled = true
+
 
 [bun]
 format = '(via [$symbol($version )]($style))'
@@ -23,26 +26,25 @@ format = '(via [$symbol($version(-$name) )]($style))'
 [cmake]
 format = '(via [$symbol($version )]($style))'
 
-[cobol]
-format = '(via [$symbol($version )]($style))'
-
-[crystal]
-format = '(via [$symbol($version )]($style))'
-
-[daml]
-format = '(via [$symbol($version )]($style))'
-
 [dart]
-format = '(via [$symbol($version )]($style))'
+format = '(via [ ($version )]($style))'
 
 [deno]
-format = '(via [$symbol($version )]($style))'
+format = '(via [ ($version )]($style))'
+
+[directory]
+truncate_to_repo = true
+home_symbol = "~"
+read_only_style = "red"
+read_only = " 󰌾"
+format = "[$path]($style)[$read_only]($read_only_style) "
 
 [dotnet]
-format = '(via [$symbol($version )(🎯 $tfm )]($style))'
+format = '(via [$symbol($version )($style))'
 
 [elixir]
-format = '(via [$symbol($version \(OTP $otp_version\) )]($style))'
+symbol = ' '
+format = '(via [$symbol($version )]($style))'
 
 [elm]
 format = '(via [$symbol($version )]($style))'
@@ -51,91 +53,58 @@ format = '(via [$symbol($version )]($style))'
 format = '(via [$symbol($version )]($style))'
 
 [fennel]
-format = '(via [$symbol($version )]($style))'
-
-[gleam]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [golang]
-format = '(via [$symbol($version )]($style))'
-
-[haskell]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [helm]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [java]
-format = '(via [$symbol($version )]($style))'
-
-[julia]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [kotlin]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [lua]
 format = '(via [$symbol($version )]($style))'
 
-[nim]
-format = '(via [$symbol($version )]($style))'
-
 [nodejs]
 format = '(via [$symbol($version )]($style))'
 
-[ocaml]
-format = '(via [$symbol($version )(\($switch_indicator$switch_name\) )]($style))'
-
-[opa]
-format = '(via [$symbol($version )]($style))'
-
 [package]
+symbol = ' '
 format = '(is [$symbol$version]($style) )'
-
-[perl]
-format = '(via [$symbol($version )]($style))'
+disabled = true
 
 [php]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [purescript]
 format = '(via [$symbol($version )]($style))'
 
 [python]
-format = '(via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style))'
-
-[quarto]
-format = '(via [$symbol($version )]($style))'
-
-[raku]
-format = '(via [$symbol($version-$vm_version )]($style))'
-
-[red]
-format = '(via [$symbol($version )]($style))'
-
-[rlang]
-format = '(via [$symbol($version )]($style))'
+symbol = ' '
+format = '(via [${symbol}$(${version} )(\($virtualenv\) )]($style))'
 
 [ruby]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [rust]
-format = '(via [$symbol($version )]($style))'
-
-[scala]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'
 
 [swift]
 format = '(via [$symbol($version )]($style))'
 
-[typst]
-format = '(via [$symbol($version )]($style))'
-
-[vagrant]
-format = '(via [$symbol($version )]($style))'
-
-[vlang]
-format = '(via [$symbol($version )]($style))'
-
 [zig]
+symbol = ' '
 format = '(via [$symbol($version )]($style))'

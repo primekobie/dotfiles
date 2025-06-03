@@ -1,0 +1,22 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/ferra.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 5
+padding.y = 5
+decorations = "Full"
+opacity = 1
+startup_mode = "Maximized"
+dynamic_title = false
+
+[font]
+normal.family = "Maple Mono NF"
+size = 13
+
+[cursor]
+style = { shape = "Block", blinking = "Always"}
