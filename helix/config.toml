@@ -1,4 +1,4 @@
-theme = "ferra"
+theme = "gruvbox_dark_hard"
 
 [editor]
 line-number = "relative"
@@ -16,8 +16,16 @@ display-inlay-hints = false
 display-signature-help-docs = true
 snippets = true
 
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "read-only-indicator","version-control", "file-modification-indicator"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
 [editor.auto-save]
 focus-lost = true

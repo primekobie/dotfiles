@@ -1,0 +1,16 @@
+# appearance
+theme = "GruvboxDarkHard"
+
+font-family = "Maple Mono NF"
+font-size = 13
+
+# window
+resize-overlay = "never"
+window-padding-x = 5
+window-padding-y = 5
+window-decoration = "server"
+window-theme = "ghostty"
+
+# GTK
+gtk-titlebar-hide-when-maximized = true
+gtk-wide-tabs = false
