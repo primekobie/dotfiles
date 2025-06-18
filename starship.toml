@@ -8,8 +8,8 @@ add_newline = false
 format = """($directory)($git_branch)($git_status)$character"""
 
 [character]
-success_symbol = "[➩](bold green)"
-error_symbol = "[➩](bold red)"
+success_symbol = "[➔](bold green)"
+error_symbol = "[➔](bold red)"
 
 [line_break]
 disabled = true
@@ -34,14 +34,14 @@ format = 'on [$symbol$branch(:$remote_branch)]($style) '
 format = '([\[$all_status$ahead_behind\]]($style) )'
 style = "bold red"
 conflicted = '='
-ahead = '⇡'
-behind = '⇣'
-diverged = '⇕'
+ahead = '🠩'
+behind = '🠫'
+diverged = '🢸'
 up_to_date = ''
 untracked = '?'
 stashed = '$'
 modified = '!'
 staged = '+'
-renamed = '»'
+renamed = '*'
 deleted = '✘'
 
