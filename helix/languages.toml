@@ -46,3 +46,24 @@ command = "sqls"
 [[language]]
 name = "sql"
 language-servers = ["sqls"]
+
+[language-server.docker-language-server]
+command = "docker-language-server"
+args = ["start", "--stdio"]
+
+[[language]]
+name = "dockerfile"
+language-servers = ["docker-language-server"]
+# file-types = ["Dockerfile", {glob = "compose.yaml"}, {glob = "compose.yml"}]
+auto-format = true
+
+[language-server.yaml-language-server]
+command = "yaml-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "yaml"
+file-types = ["yaml", "yml"]
+language-servers = [ "yaml-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
