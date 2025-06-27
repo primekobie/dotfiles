@@ -1,8 +1,11 @@
 # appearance
-theme = "GruvboxDarkHard"
 
+theme = "light:everforest-light,dark:everforest-dark"
 font-family = "Maple Mono NF"
 font-size = 13
+font-feature = -calt
+
+cursor-style = "block"
 
 # window
 resize-overlay = "never"
@@ -10,7 +13,9 @@ window-padding-x = 5
 window-padding-y = 5
 window-decoration = "server"
 window-theme = "ghostty"
+window-height = 35
+window-width = 120
 
 # GTK
 gtk-titlebar-hide-when-maximized = true
-gtk-wide-tabs = false
+

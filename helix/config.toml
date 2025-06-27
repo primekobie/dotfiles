@@ -1,4 +1,4 @@
-theme = "gruvbox_dark_hard"
+theme = "everforest_dark"
 
 [editor]
 line-number = "relative"
@@ -15,11 +15,6 @@ display-messages = true
 display-inlay-hints = false
 display-signature-help-docs = true
 snippets = true
-
-[editor.cursor-shape]
-normal = "block"
-insert = "bar"
-select = "block"
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "read-only-indicator","version-control", "file-modification-indicator"]
@@ -58,3 +53,6 @@ home = "no_op"
 end = "no_op"
 C-h = "goto_line_start"
 C-l = "goto_line_end_newline"
+
+[keys.normal.g]
+x = ":buffer-close"
