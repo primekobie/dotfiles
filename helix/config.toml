@@ -1,4 +1,4 @@
-theme = "everforest_dark"
+theme = "ferra"
 
 [editor]
 line-number = "relative"
@@ -56,3 +56,7 @@ C-l = "goto_line_end_newline"
 
 [keys.normal.g]
 x = ":buffer-close"
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
