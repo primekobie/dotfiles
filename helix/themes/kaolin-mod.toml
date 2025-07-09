@@ -1,4 +1,4 @@
-# Based on the original helix kaolin-dark theme.
+# Based on the helix kaolin-dark theme.
 # Other Author : thlsrms <thlsrmsdev@gmail.com>
 # Original author: kaolin-dark by Ogden Webb: github.com/ogdenwebb/emacs-kaolin-themes
 # Kaolin Dark Theme - A dark jade theme inspired by Sierra.vim : github.com/AlessandroYorba/Sierra
@@ -11,7 +11,7 @@
 "punctuation.delimiter" = "gray1"
 "operator" = "gray1"
 "special" = "constant"
-"variable.other.member" = { fg = "violet7", modifiers = ["italic"] }
+"variable.other.member" = { fg = "violet7"}
 "variable" = "silver"
 "variable.builtin" = "hint"
 "variable.parameter" = "silver"
@@ -19,13 +19,13 @@
 "type.builtin" = "info"
 "constructor" = { fg = "type" }
 "function" = { fg = "info" }
-"function.macro" = "type"
-"function.builtin" = "type"
+"function.macro" = "constant"
+"function.builtin" = "constant"
 "tag" = "#7aaaa5"
-"comment" = { fg = "gray0", modifiers = ["italic"] }
+"comment" = { fg = "gray0"}
 "constant" = { fg = "constant" }
 "constant.builtin" = { fg = "info" }
-"string" = "#A5B081"
+"string" = "#AC9191"
 "constant.numeric" = "info"
 "constant.character.escape" = { fg = "hint", modifiers = ["bold"] }
 "label" = "constant"
@@ -89,9 +89,7 @@
 "ui.debug.breakpoint" = "error"
 "ui.debug.active" = "warn"
 "ui.bufferline" = { fg = "gray0", bg = "bg0" }
-"ui.bufferline.active" = { fg = "info", bg = "bg1", underline = { color = "info", style = "line" }, modifiers = [
-    "italic",
-] }
+"ui.bufferline.active" = { fg = "info", bg = "bg1", underline = { color = "info", style = "line" }}
 
 "markup.heading" = "info"
 "markup.bold" = { modifiers = ["bold"] }
@@ -113,7 +111,7 @@ gray1 = "#919a9c"             # gray9
 green0 = "#6fb593"            # spring-green3
 selection0 = "#68f3ca"        # aquamarine3
 selection1 = "#2e403b"        # aquamarine6
-type = "#577399"              # vermilion4
+type = "#C2A694"
 hint = "#4d9391"              # teal1
 info = "#80bcb6"              # teal4
 warn = "#dbac66"              # orange1
@@ -121,5 +119,6 @@ error = "#cd5c60"             # red1
 constant = "#ab98b5"          # purple4
 ultramarine4_dark = "#E7BBE3"
 silver = "#B0C1CE"
-violet7 = "#766884"
-builtin = "#CD6361"
+violet7 = "#936D89"
+builtin = "#A0566B"
+keyword = "#8383AF"
