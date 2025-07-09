@@ -3,14 +3,26 @@ command = "emmet-ls"
 args = ["--stdio"]
 
 [[language]]
+name = "sql"
+language-servers = ["sqls"]
+
+[[language]]
 name = "go"
 language-servers = ["gopls", "sqls"]
 auto-format = true
 formatter = {command = "goimports"}
 
 [[language]]
+name = "gotmpl"
+scope = "source.gotmpl"
+auto-format = false
+language-servers = ["gopls","vscode-html-language-server", "emmet-ls"]
+
+[[language]]
 name = "typescript"
 language-servers = ["typescript-language-server"]
+roots = [ "package.json", "jsconfig.json" ]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "html"
@@ -21,6 +33,7 @@ formatter = { command = "prettier", args = ["--parser", "html"] }
 [[language]]
 name = "javascript"
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
+roots = [ "package.json", "jsconfig.json" ]
 language-servers = ["typescript-language-server"]
 auto-format = true
 
@@ -28,12 +41,14 @@ auto-format = true
 name = "tsx"
 auto-format = true
 language-servers = ["typescript-language-server", "emmet-ls"]
+roots = [ "package.json", "jsconfig.json" ]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "jsx"
 auto-format = true
 language-servers = ["typescript-language-server", "emmet-ls"]
+roots = [ "package.json", "jsconfig.json" ]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
@@ -42,10 +57,6 @@ formatter = { command = "prettier", args = ["--parser", "json"] }
 
 [language-server.sqls]
 command = "sqls"
-
-[[language]]
-name = "sql"
-language-servers = ["sqls"]
 
 [language-server.docker-language-server]
 command = "docker-language-server"

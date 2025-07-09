@@ -1,10 +1,10 @@
-theme = "ferra"
+theme = "maolin"
 
 [editor]
 line-number = "relative"
 end-of-line-diagnostics = "hint"
 true-color = true
-text-width = 100
+text-width = 120
 color-modes = true
 popup-border = "all"
 bufferline = "always"

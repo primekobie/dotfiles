@@ -1,20 +1,23 @@
 # appearance
+theme = "kaolin"
+#font-family = "Maple Mono NF"
+#font-family = "mononoki"
+font-family = "Input"
 
-theme = "light:everforest-light,dark:everforest-dark"
-font-family = "Maple Mono NF"
 font-size = 13
 font-feature = -calt
-
 cursor-style = "block"
+
 
 # window
 resize-overlay = "never"
-window-padding-x = 5
-window-padding-y = 5
+window-padding-x = 2
+window-padding-y = 2
 window-decoration = "server"
 window-theme = "ghostty"
-window-height = 35
-window-width = 120
+maximize
+#window-height = 35
+#window-width = 120
 
 # GTK
 gtk-titlebar-hide-when-maximized = true
