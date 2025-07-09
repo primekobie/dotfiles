@@ -1,5 +1,5 @@
-# Author : thlsrms <thlsrmsdev@gmail.com>
-
+# Based on the original helix kaolin-dark theme.
+# Other Author : thlsrms <thlsrmsdev@gmail.com>
 # Original author: kaolin-dark by Ogden Webb: github.com/ogdenwebb/emacs-kaolin-themes
 # Kaolin Dark Theme - A dark jade theme inspired by Sierra.vim : github.com/AlessandroYorba/Sierra
 
@@ -12,20 +12,20 @@
 "operator" = "gray1"
 "special" = "constant"
 "variable.other.member" = { fg = "violet7", modifiers = ["italic"] }
-"variable" = "ultramarine4_dark"
+"variable" = "silver"
 "variable.builtin" = "hint"
-"variable.parameter" = "ultramarine4_dark"
+"variable.parameter" = "silver"
 "type" = "type"
 "type.builtin" = "info"
 "constructor" = { fg = "type" }
 "function" = { fg = "info" }
-"function.macro" = "constant"
-"function.builtin" = "selection0"
+"function.macro" = "type"
+"function.builtin" = "type"
 "tag" = "#7aaaa5"
 "comment" = { fg = "gray0", modifiers = ["italic"] }
 "constant" = { fg = "constant" }
 "constant.builtin" = { fg = "info" }
-"string" = "hint"
+"string" = "#A5B081"
 "constant.numeric" = "info"
 "constant.character.escape" = { fg = "hint", modifiers = ["bold"] }
 "label" = "constant"
@@ -55,12 +55,21 @@
 "ui.cursorcolumn.primary" = { bg = "bg1" }
 "ui.cursorcolumn.secondary" = { bg = "bg2" }
 "ui.statusline" = { fg = "info", bg = "bg1" }
-"ui.statusline.normal" = { fg = "hint", bg = "bg1", modifiers = ["reversed", "bold"] }
-"ui.statusline.insert" = { fg = "green0", bg = "bg1", modifiers = ["reversed", "bold"] }
-"ui.statusline.select" = { fg = "ultramarine4_dark", bg = "bg1", modifiers = ["reversed", "bold"] }
+"ui.statusline.normal" = { fg = "hint", bg = "bg1", modifiers = [
+    "reversed",
+    "bold",
+] }
+"ui.statusline.insert" = { fg = "green0", bg = "bg1", modifiers = [
+    "reversed",
+    "bold",
+] }
+"ui.statusline.select" = { fg = "ultramarine4_dark", bg = "bg1", modifiers = [
+    "reversed",
+    "bold",
+] }
 "ui.statusline.inactive" = { fg = "gray0", bg = "bg1" }
 "ui.popup" = { bg = "bg1" }
-"ui.window" = { fg= "bg1", bg = "bg0" }
+"ui.window" = { fg = "bg1", bg = "bg0" }
 "ui.help" = { bg = "bg1", fg = "fg0" }
 "ui.text" = { fg = "fg1" }
 "ui.text.focus" = { fg = "selection0" }
@@ -80,7 +89,9 @@
 "ui.debug.breakpoint" = "error"
 "ui.debug.active" = "warn"
 "ui.bufferline" = { fg = "gray0", bg = "bg0" }
-"ui.bufferline.active" = { fg = "info", bg = "bg1", underline = { color = "info", style = "line" }, modifiers = [ "italic" ] }
+"ui.bufferline.active" = { fg = "info", bg = "bg1", underline = { color = "info", style = "line" }, modifiers = [
+    "italic",
+] }
 
 "markup.heading" = "info"
 "markup.bold" = { modifiers = ["bold"] }
@@ -92,21 +103,23 @@
 
 [palette]
 # kaolin-dark palette
-bg0 = "#18181b" # black1
-bg1 = "#222225" # black2
-bg2 = "#303035" # black4
-fg0 = "#e6e6e8" # white1
-fg1 = "#adadb9" # whiet4
-gray0 = "#545c5e" # gray3
-gray1 = "#919a9c" # gray9
-green0 = "#6fb593" # spring-green3
-selection0 = "#68f3ca" # aquamarine3
-selection1 = "#2e403b" # aquamarine6
-type = "#cd9575" # vermilion4
-hint = "#4d9391" # teal1
-info = "#80bcb6" # teal4
-warn = "#dbac66" # orange1
-error = "#cd5c60" # red1
-constant = "#ab98b5" # purple4
-ultramarine4_dark = "#968cc7"
+bg0 = "#18181b"               # black1
+bg1 = "#222225"               # black2
+bg2 = "#303035"               # black4
+fg0 = "#e6e6e8"               # white1
+fg1 = "#adadb9"               # whiet4
+gray0 = "#545c5e"             # gray3
+gray1 = "#919a9c"             # gray9
+green0 = "#6fb593"            # spring-green3
+selection0 = "#68f3ca"        # aquamarine3
+selection1 = "#2e403b"        # aquamarine6
+type = "#577399"              # vermilion4
+hint = "#4d9391"              # teal1
+info = "#80bcb6"              # teal4
+warn = "#dbac66"              # orange1
+error = "#cd5c60"             # red1
+constant = "#ab98b5"          # purple4
+ultramarine4_dark = "#E7BBE3"
+silver = "#B0C1CE"
 violet7 = "#766884"
+builtin = "#CD6361"
