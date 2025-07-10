@@ -4,7 +4,7 @@
 # Kaolin Dark Theme - A dark jade theme inspired by Sierra.vim : github.com/AlessandroYorba/Sierra
 
 "attribute" = "constant"
-"keyword" = { fg = "hint" }
+"keyword" = { fg = "#7E84BD" }
 "keyword.directive" = "info"
 "namespace" = "constant"
 "punctuation" = "gray1"
@@ -111,14 +111,14 @@ gray1 = "#919a9c"             # gray9
 green0 = "#6fb593"            # spring-green3
 selection0 = "#68f3ca"        # aquamarine3
 selection1 = "#2e403b"        # aquamarine6
-type = "#C2A694"
+type = "#ADAEAD"
 hint = "#4d9391"              # teal1
-info = "#80bcb6"              # teal4
+info = "#75A9A4"              # teal4
 warn = "#dbac66"              # orange1
 error = "#cd5c60"             # red1
 constant = "#ab98b5"          # purple4
 ultramarine4_dark = "#E7BBE3"
-silver = "#B0C1CE"
+silver = "#87929F"
 violet7 = "#936D89"
 builtin = "#A0566B"
 keyword = "#8383AF"
