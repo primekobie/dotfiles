@@ -1,4 +1,4 @@
-#599F76 Kansō-Ink inspired Helix Theme
+# Kansō-Ink inspired Helix Theme
 
 # Diagnostics
 warning = { fg = "orange" }
@@ -48,21 +48,12 @@ hint    = { fg = "hint" }
 
 # Syntax
 "keyword"                     = {fg = "blue", modifiers = ["bold"]}
-# "keyword.control"             = "blue"
-# "keyword.control.conditional" = "blue"
-# "keyword.control.repeat"      = "blue"
-# "keyword.control.import"      = "blue"
-# "keyword.control.return"      = "blue"
-# "keyword.control.exception"   = "blue"
-# "keyword.operator"            = "cyan"
-# "keyword.directive"           = "blue"
-# "keyword.function"            = "blue"
 "function"           = "cyan"
 "function.builtin"   = "cyan"
 "function.method"    = "cyan"
 "function.special"   = "cyan"
-"type"              = {fg = "type", modifiers = ["bold"]}
-"type.builtin"      = {fg = "type", modifiers = ["bold"]}
+"type"              = {fg = "cyan", modifiers = ["bold"]}
+"type.builtin"      = {fg = "cyan", modifiers = ["bold"]}
 "type.enum.variant" = "orange"
 "constructor"       = "cyan"
 "constant"                 = "orange"
@@ -119,9 +110,6 @@ hint    = { fg = "hint" }
 [palette]
 bg         = "#1F2428"
 bg_alt     = "#191C22"
-# bg_status  = "#20252D"
-# bg_menu    = "#3B4252"
-# bg_popup   = "#2E3440"
 fg         = "#AEAEAE"
 fg_bright  = "#ECEFF4"
 comment  = "#75797F"
@@ -142,3 +130,4 @@ cyan       = "#8FBCBB"
 orange     = "#D08770"
 info = "#0db9d7"
 hint = "#1abc9c"
+
