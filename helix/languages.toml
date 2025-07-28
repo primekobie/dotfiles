@@ -78,3 +78,14 @@ file-types = ["yaml", "yml"]
 language-servers = [ "yaml-language-server" ]
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "yaml"] }
+
+[language-server.toml-language-server]
+command = "toplo"
+args = ["--stdio"]
+
+[[language]]
+name = "toml"
+file-types = ["toml"]
+language-servers = [ "toml-language-server" ]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "toml"] }

@@ -1,11 +1,11 @@
 # appearance
-theme = "kaolin"
-#font-family = "Maple Mono NF"
-#font-family = "mononoki"
-font-family = "Input"
+theme = "dark:kanso-ink,light:kanso-pearl"
+#font-family = "PT Mono"
+font-family = "0xProto"
+
 
 font-size = 13
-font-feature = -calt
+#font-feature = -calt
 cursor-style = "block"
 
 
