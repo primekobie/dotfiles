@@ -1,11 +1,9 @@
 # appearance
-theme = "dark:kanso-ink,light:kanso-pearl"
-#font-family = "PT Mono"
-font-family = "0xProto"
+theme = "dark:Ayu Mirage,light:ayu_light"
 
-
-font-size = 13
-#font-feature = -calt
+font-family = "Free Mono NF"
+font-size = 14
+font-feature = -calt
 cursor-style = "block"
 
 
