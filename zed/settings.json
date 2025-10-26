@@ -1,0 +1,41 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false
+  },
+  "base_keymap": "JetBrains",
+  "ui_font_family": "Adwaita Sans",
+  "ui_font_size": 16,
+  "buffer_font_family": "Prime SM",
+  "buffer_font_size": 17,
+  "terminal": {
+    "font_family": "PrimeSM Nerd Font"
+  },
+  "buffer_line_height": "standard",
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Light Soft",
+    "dark": "GitHub Dark Classic"
+  },
+  "auto_update": false,
+  "file_types": {
+    "HTML": ["gohtml"]
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 2000
+    }
+  },
+  "disable_ai": true,
+  "preferred_line_length": 130,
+  "soft_wrap":"bounded",
+  "show_wrap_guides": false
+}
