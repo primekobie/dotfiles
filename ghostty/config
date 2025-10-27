@@ -1,8 +1,8 @@
 # appearance
-theme = "dark:Ayu Mirage,light:ayu_light"
+theme = light:Belafonte Day,dark:GitHub Dark Dimmed
 
-font-family = "Free Mono NF"
-font-size = 14
+font-family = "Prime SM"
+font-size = 13
 font-feature = -calt
 cursor-style = "block"
 

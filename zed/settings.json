@@ -13,11 +13,13 @@
   },
   "base_keymap": "JetBrains",
   "ui_font_family": "Adwaita Sans",
-  "ui_font_size": 16,
+  "ui_font_size": 17,
   "buffer_font_family": "Prime SM",
+  "buffer_font_fallbacks": ["Consolas", "Input", "Liberation Mono", "Prime Mono"],
   "buffer_font_size": 17,
   "terminal": {
-    "font_family": "PrimeSM Nerd Font"
+    "font_family": "PrimeSM Nerd Font",
+    "font_fallbacks": ["Conslas Nerd Font", "Input Nerd Foont", "PrimeMono Nerd Font"]
   },
   "buffer_line_height": "standard",
   "theme": {
@@ -36,6 +38,6 @@
   },
   "disable_ai": true,
   "preferred_line_length": 130,
-  "soft_wrap":"bounded",
+  "soft_wrap": "bounded",
   "show_wrap_guides": false
 }

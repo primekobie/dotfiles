@@ -15,7 +15,7 @@ startup_mode = "Maximized"
 dynamic_title = false
 
 [font]
-normal.family = "Input"
+normal.family = "PrimeSM Nerd Font"
 size = 13
 
 [cursor]
