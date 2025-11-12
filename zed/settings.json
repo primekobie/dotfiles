@@ -7,25 +7,45 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Zed (Default)",
+  "show_edit_predictions": false,
+  "helix_mode": false,
+  "agent": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-flash"
+    },
+    "model_parameters": []
+  },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "agent_buffer_font_size": 16.0,
   "telemetry": {
     "diagnostics": true,
     "metrics": false
   },
   "base_keymap": "JetBrains",
   "ui_font_family": "Adwaita Sans",
+  "ui_font_weight": 500,
   "ui_font_size": 17,
-  "buffer_font_family": "Prime SM",
-  "buffer_font_fallbacks": ["Consolas", "Input", "Liberation Mono", "Prime Mono"],
+  "buffer_font_family": "Maple Mono",
+  "buffer_font_fallbacks": ["Liberation Mono"],
   "buffer_font_size": 17,
-  "terminal": {
-    "font_family": "PrimeSM Nerd Font",
-    "font_fallbacks": ["Conslas Nerd Font", "Input Nerd Foont", "PrimeMono Nerd Font"]
+  "buffer_font_features": {
+    "calt": true
   },
-  "buffer_line_height": "standard",
+  "terminal": {
+    "font_family": "Maple Mono NF",
+    "font_fallbacks": ["Liberation Mono"]
+  },
+  "buffer_line_height": {
+    "custom": 1.4
+  },
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light Soft",
-    "dark": "GitHub Dark Classic"
+    "light": "Zedokai Light (Filter Sun)",
+    "dark": "Zedokai (Filter Octagon)"
   },
   "auto_update": false,
   "file_types": {
@@ -33,11 +53,11 @@
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 2000
+      "milliseconds": 1000
     }
   },
-  "disable_ai": true,
-  "preferred_line_length": 130,
+  "disable_ai": false,
+  "preferred_line_length": 120,
   "soft_wrap": "bounded",
   "show_wrap_guides": false
 }
