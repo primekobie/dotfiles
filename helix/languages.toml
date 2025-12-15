@@ -1,27 +1,24 @@
-[language-server.emmet-ls]
-command = "emmet-ls"
-args = ["--stdio"]
-
 [[language]]
 name = "sql"
 language-servers = ["sqls"]
 
 [[language]]
 name = "go"
-language-servers = ["gopls", "sqls"]
+language-servers = ["gopls"]
 auto-format = true
-formatter = {command = "goimports"}
+formatter = { command = "goimports" }
 
 [[language]]
 name = "gotmpl"
 scope = "source.gotmpl"
+file-types = ["gohtml", "gotmpl"]
 auto-format = false
-language-servers = ["gopls","vscode-html-language-server", "emmet-ls"]
+language-servers = ["vscode-html-language-server", "emmet-ls"]
 
 [[language]]
 name = "typescript"
 language-servers = ["typescript-language-server"]
-roots = [ "package.json", "jsconfig.json" ]
+roots = ["package.json", "jsconfig.json"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
@@ -33,7 +30,7 @@ formatter = { command = "prettier", args = ["--parser", "html"] }
 [[language]]
 name = "javascript"
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
-roots = [ "package.json", "jsconfig.json" ]
+roots = ["package.json", "jsconfig.json"]
 language-servers = ["typescript-language-server"]
 auto-format = true
 
@@ -41,19 +38,76 @@ auto-format = true
 name = "tsx"
 auto-format = true
 language-servers = ["typescript-language-server", "emmet-ls"]
-roots = [ "package.json", "jsconfig.json" ]
+roots = ["package.json", "jsconfig.json"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "jsx"
 auto-format = true
 language-servers = ["typescript-language-server", "emmet-ls"]
-roots = [ "package.json", "jsconfig.json" ]
+roots = ["package.json", "jsconfig.json"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "json"
 formatter = { command = "prettier", args = ["--parser", "json"] }
+
+[[language]]
+name = "dockerfile"
+language-servers = ["docker-language-server"]
+# file-types = ["Dockerfile", {glob = "compose.yaml"}, {glob = "compose.yml"}]
+auto-format = true
+
+[[language]]
+name = "yaml"
+file-types = ["yaml", "yml"]
+language-servers = ["yaml-language-server"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+
+# [language-server.toml-language-server]
+# command = "tombi"
+# args = ["lsp"]
+
+# [[language]]
+# name = "toml"
+# file-types = ["toml"]
+# language-servers = [ "toml-language-server" ]
+# auto-format = true
+# formatter = { command = "prettier", args = ["--parser", "toml"] }
+
+[[language]]
+name = "vue"
+file-types = ["vue"]
+language-servers = ["vue-language-server", "typescript-language-server"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "vue"] }
+
+[[language]]
+name = "c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["c", "h"]
+comment-token = "//"
+language-servers = ["clangd"]
+indent = { tab-width = 4, unit = "  " }
+auto-format = true
+formatter = { command = "clang-format" }
+
+[[language]]
+name = "php"
+scope = "source.php"
+injection-regex = "php"
+file-types = ["php", "inc", "php4", "php5", "phtml", "ctp"]
+shebangs = ["php"]
+roots = ["composer.json", "index.php"]
+comment-token = "//"
+language-servers = [ "phpactor" ]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = ["--stdio"]
 
 [language-server.sqls]
 command = "sqls"
@@ -62,30 +116,17 @@ command = "sqls"
 command = "docker-language-server"
 args = ["start", "--stdio"]
 
-[[language]]
-name = "dockerfile"
-language-servers = ["docker-language-server"]
-# file-types = ["Dockerfile", {glob = "compose.yaml"}, {glob = "compose.yml"}]
-auto-format = true
-
 [language-server.yaml-language-server]
 command = "yaml-language-server"
 args = ["--stdio"]
 
-[[language]]
-name = "yaml"
-file-types = ["yaml", "yml"]
-language-servers = [ "yaml-language-server" ]
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "yaml"] }
-
-[language-server.toml-language-server]
-command = "toplo"
+[language-server.vue-language-server]
+command = "vue-language-server"
 args = ["--stdio"]
 
-[[language]]
-name = "toml"
-file-types = ["toml"]
-language-servers = [ "toml-language-server" ]
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "toml"] }
+[language-server.clangd]
+command = "clangd"
+
+[language-server.phpactor]
+command = "phpactor"
+args = ["language-server"]

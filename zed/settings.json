@@ -11,42 +11,39 @@
   "show_edit_predictions": false,
   "helix_mode": false,
   "agent": {
+    "default_profile": "ask",
     "default_model": {
-      "provider": "google",
-      "model": "gemini-2.5-flash"
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
     },
     "model_parameters": []
   },
   "edit_predictions": {
     "mode": "subtle"
   },
-  "agent_buffer_font_size": 16.0,
+  "agent_buffer_font_size": 17.0,
   "telemetry": {
     "diagnostics": true,
     "metrics": false
   },
   "base_keymap": "JetBrains",
   "ui_font_family": "Adwaita Sans",
-  "ui_font_weight": 500,
-  "ui_font_size": 17,
-  "buffer_font_family": "Maple Mono",
-  "buffer_font_fallbacks": ["Liberation Mono"],
-  "buffer_font_size": 17,
+  "ui_font_size": 18,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 18,
   "buffer_font_features": {
-    "calt": true
+    "calt":true
   },
   "terminal": {
-    "font_family": "Maple Mono NF",
-    "font_fallbacks": ["Liberation Mono"]
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_features": {
+      "calt": true
+    }
   },
   "buffer_line_height": {
-    "custom": 1.4
+    "custom": 1.3
   },
-  "theme": {
-    "mode": "system",
-    "light": "Zedokai Light (Filter Sun)",
-    "dark": "Zedokai (Filter Octagon)"
-  },
+  "theme": "Gruvbox Material Dark",
   "auto_update": false,
   "file_types": {
     "HTML": ["gohtml"]
