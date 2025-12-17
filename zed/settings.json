@@ -9,7 +9,7 @@
 {
   "icon_theme": "Zed (Default)",
   "show_edit_predictions": false,
-  "helix_mode": false,
+  "helix_mode": true,
   "agent": {
     "default_profile": "ask",
     "default_model": {
@@ -29,13 +29,13 @@
   "base_keymap": "JetBrains",
   "ui_font_family": "Adwaita Sans",
   "ui_font_size": 18,
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_family": "CommitMono",
   "buffer_font_size": 18,
   "buffer_font_features": {
-    "calt":true
+    "calt": true
   },
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font",
+    "font_family": "CommitMono Nerd Font",
     "font_features": {
       "calt": true
     }

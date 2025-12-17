@@ -1,18 +1,12 @@
 # appearance
-theme = light:Monokai Pro Light,dark:Monokai Pro Octagon
+theme = Gruvbox Material Dark
 
-font-family = "Maple Mono"
-font-size = 13
-font-feature = -calt
+font-family = "CommitMono"
+font-size = 14
+#font-feature = -calt
 cursor-style = "block"
 
 #adjust-cell-height = 10
-
-#background-image = purple-flower.png
-#background-image-opacity = 0.2
-#background-image-position = center
-#background-image-fit = cover
-#background-image-repeat = false
 
 # window
 resize-overlay = "never"
