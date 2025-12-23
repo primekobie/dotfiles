@@ -1,5 +1,5 @@
 # appearance
-theme = Gruvbox Material Dark
+theme = Bufferline
 
 font-family = "CommitMono"
 font-size = 14

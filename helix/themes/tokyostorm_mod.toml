@@ -1,6 +1,0 @@
-inherits = "tokyonight_storm"
-
-function = { fg = "blue" }
-"keyword.control.return" = { fg = "purple" }
-comment = { fg = "comment" }
-"variable.parameter" = { fg = "yellow" }

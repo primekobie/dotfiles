@@ -1,0 +1,116 @@
+# User Interface
+"ui.background" = { bg = "jet" }
+"ui.window" = { fg = "turquoise" }
+"ui.gutter" = { fg = "blue_slate", bg = "jet" }
+"ui.text" = { fg = "pale_slate" }
+"ui.text.focus" = { modifiers = ["bold"] }
+"ui.text.info" = { fg = "pale_slate" }
+"ui.text.directory" = { fg = "teal", modifiers = ["bold"] }
+"ui.cursor" = { fg = "ink", bg = "pink" }
+"ui.cursor.primary" = { modifiers = ["reversed", "bold"] }
+"ui.cursor.match" = { modifiers = ["bold"] }
+"ui.selection" = { bg = "dusk_blue" }
+"ui.selection.primary" = { bg = "dusk_blue" }
+"ui.linenr" = { fg = "blue_slate" }
+"ui.linenr.selected" = { fg = "pale_slate" }
+"ui.virtual" = { fg = "blue_slate" }
+"ui.virtual.ruler" = { fg = "blue_slate" }
+"ui.virtual.indent-guide" = { fg = "blue_slate" }
+"ui.virtual.whitespace" = { fg = "blue_slate" }
+"ui.virtual.jump-label" = { fg = "#C09BED" }
+"ui.statusline" = { fg = "pale_slate", bg = "ink" }
+"ui.statusline.active" = { fg = "pale_slate", bg = "jet", modifiers = ["bold"] }
+"ui.statusline.inactive" = { fg = "blue_slate" }
+"ui.statusline.normal" = { fg = "ink", bg = "pink", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "ink", bg = "mint", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "ink", bg = "tuscan", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "blue_slate" }
+"ui.help" = { fg = "pale_slate", bg = "ink" }
+"ui.highlight" = { bg = "dusk_blue" }
+"ui.menu" = { fg = "pale_slate", bg = "ink" }
+"ui.menu.selected" = { fg = "pale_slate", bg = "blue_slate" }
+"ui.popup" = { fg = "pale_slate", bg = "ink" }
+"ui.popup.info" = { fg = "pale_slate", bg = "ink" }
+"ui.picker.header" = { modifiers = ["bold"] }
+"ui.debug.breakpoint" = { fg = "peach" }
+"ui.debug.active" = { fg = "turquoise" }
+"warning" = { fg = "tuscan" }
+"error" = { fg = "scarlet" }
+"info" = { fg = "turquoise" }
+"hint" = { fg = "mint" }
+"diagnostic.deprecated" = { modifiers = ["dim", "crossed_out"] }
+"diagnostic.error" = { underline = { style = "curl", color = "scarlet" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "tuscan" } }
+"diagnostic.info" = { underline = { style = "curl", color = "turquoise" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "mint" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+# Syntax Highlighting
+"property" = { fg = "pale_slate" }
+"special" = { fg = "pink" }
+"attribute" = { fg = "tuscan" }
+"type" = { fg = "tuscan" }
+"type.builtin" = { fg = "tuscan" }
+"type.enum.variant" = { fg = "pink" }
+"constructor" = { fg = "peach" }
+"constant" = { fg = "pink" }
+"constant.numeric" = { fg = "peach" }
+"string" = { fg = "muted_teal" }
+"string.regexp" = { fg = "peach" }
+"string.special" = { fg = "teal" }
+"string.special.symbol" = { fg = "peach" }
+"comment" = { fg = "blue_slate" }
+"variable" = { fg = "pale_slate" }
+"variable.builtin" = { fg = "pink" }
+"variable.parameter" = { fg = "pale_slate" }
+"variable.other.member" = { fg = "pale_slate" }
+"label" = { fg = "pink" }
+"punctuation" = { fg = "teal" }
+"keyword" = { fg = "lilac" }
+"keyword.control" = { fg = "lilac" }
+"keyword.control.import" = { fg = "lilac" }
+"keyword.operator" = { modifiers = ["bold"] }
+"keyword.directive" = { fg = "teal" }
+"operator" = { fg = "teal" }
+"function" = { fg = "denim" }
+"function.builtin" = { fg = "denim" }
+"function.macro" = { fg = "peach" }
+"function.special" = { fg = "peach" }
+"tag" = { fg = "pink" }
+"tag.error" = { fg = "scarlet" }
+"namespace" = { fg = "pale_slate" }
+## Markup
+"markup.heading" = { fg = "turquoise", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "pink", modifiers = ["bold"] }
+"markup.list" = { fg = "pink" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link" = { fg = "turquoise", underline = { style = "line" } }
+"markup.link.label" = { fg = "peach" }
+"markup.link.text" = { fg = "peach" }
+"markup.link.url" = { underline = { style = "line" } }
+"markup.quote" = { fg = "blue_ice", modifiers = ["italic"] }
+"markup.normal" = { fg = "pale_slate" }
+"markup.raw.inline" = { fg = "peach", modifiers = ["italic"] }
+## Version Control
+"diff.plus" = { fg = "mint" }
+"diff.minus" = { fg = "scarlet" }
+"diff.delta" = { fg = "tuscan" }
+"diff.delta.moved" = { fg = "tuscan" }
+
+[palette]
+jet = "#1B2B34"
+ink = "#11212B"
+pale_slate = "#C0C5CE"
+tuscan = "#FAC863"
+lilac = "#C594C5"
+teal = "#5FB3B3"
+muted_teal = "#8AB588"
+denim = "#5A87B3"
+pink = "#F65C65"
+blue_slate = "#58667C"
+peach = "#F97857"
+mint = "#33BF94"
+turquoise = "#00ABCE"
+scarlet = "#DA4167"
+dusk_blue = "#2F506E"
+blue_ice = "#89BBFE"
